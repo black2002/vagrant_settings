@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: 'c:/AAA/laravel_html_dbal'
+        to: /home/vagrant/Code/laravel-html-dbal
+sites:
+    -
+        map: laravel_html_dbal.app
+        to: /home/vagrant/Code/laravel-html-dbal/public
+databases:
+    - homestead
+name: laravel-html-dbal
+hostname: laravel-html-dbal
